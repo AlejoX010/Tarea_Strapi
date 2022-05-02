@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/empanadas",
+      "handler": "empanadas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empanadas/count",
+      "handler": "empanadas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empanadas/:id",
+      "handler": "empanadas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/empanadas",
+      "handler": "empanadas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/empanadas/:id",
+      "handler": "empanadas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/empanadas/:id",
+      "handler": "empanadas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

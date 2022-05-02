@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empanadas",
+  "info": {
+    "name": "empanadas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "richtext",
+      "required": true
+    },
+    "precio": {
+      "type": "integer"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": false
+    }
+  }
+}
